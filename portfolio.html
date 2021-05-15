@@ -13,8 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
     <header>
@@ -27,11 +26,15 @@
               ><span class="logo-second-header">Studio</span></a
             >
             <ul class="site-nav list">
-              <li class="site-nav__item"><a href="./index.html">Студия</a></li>
               <li class="site-nav__item">
-                <a class="link current">Портфолио</a>
+                <a href="./index.html" class="site-nav__link">Студия</a>
               </li>
-              <li class="site-nav__item"><a href="">Контакты</a></li>
+              <li class="site-nav__item">
+                <a class="site-nav__link current">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
             </ul>
           </nav>
           <!--contact information-->
@@ -92,7 +95,7 @@
             </ul>
             <!--portfolio item-->
             <h2 class="section__title visually-hidden">Портфолио</h2>
-            <ul class="portfolio list">
+            <ul class="portfolio__list list">
               <li class="portfolio__item">
                 <article class="cards">
                   <a href="" class="cards__link">
@@ -355,10 +358,14 @@
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address__scroll list">
               <li class="address__item">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="address__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="address__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -422,6 +429,7 @@
             <div class="footer-form__field">
               <label class="label" for="name"></label>
               <input
+                class="footer-form__input"
                 type="text"
                 name="user-name"
                 id="name"
